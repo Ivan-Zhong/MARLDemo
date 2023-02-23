@@ -1,0 +1,48 @@
+seed:
+  seed_specify: True
+  seed: 1
+device:
+  cuda: True
+  cuda_deterministic: True
+train:
+  n_rollout_threads: 10
+  num_env_steps: 10000000
+  episode_length: 200
+  log_interval: 5
+  eval_interval: 25
+  model_dir: ~
+eval:
+  use_eval: True
+  n_eval_rollout_threads: 10
+  eval_episodes: 20
+render:
+  use_render: False
+  render_episodes: 10 # how many episodes to render
+model:
+  # network parameters
+  hidden_sizes: [64, 64]
+  initialization_method: orthogonal_ # choose from xavier_uniform_, orthogonal_, ...
+  gain: 0.01
+  # optimizer parameters
+  lr: 0.0005
+  critic_lr: 0.0005
+  opti_eps: 0.00001
+  weight_decay: 0
+  std_x_coef: 1
+  std_y_coef: 0.5
+algo:
+  # ppo parameters
+  ppo_epoch: 5
+  critic_epoch: 5
+  use_clipped_value_loss: True
+  clip_param: 0.2
+  actor_num_mini_batch: 1
+  critic_num_mini_batch: 1
+  entropy_coef: 0.01
+  value_loss_coef: 1
+  use_max_grad_norm: True
+  max_grad_norm: 10.0
+  gamma: 0.99
+  gae_lambda: 0.95
+  use_huber_loss: True
+  huber_delta: 10.0

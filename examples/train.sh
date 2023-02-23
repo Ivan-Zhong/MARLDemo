@@ -1,0 +1,1 @@
+python train.py --exp_name test
