@@ -17,6 +17,15 @@ pip install -e .
 
 
 
+## Usage
+
+```bash
+cd examples
+./train.sh
+```
+
+
+
 ## Guidance
 
 MARL pipeline is shown as follows:
