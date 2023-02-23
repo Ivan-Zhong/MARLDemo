@@ -64,3 +64,8 @@ class ENV:
 
 
 ## Training results
+
+<div align="center">
+    <img src="./assets/curve.png" width="50%"/>
+    <img src="./assets/simple_spread_v2.gif" width="20%"/>
+</div>
