@@ -6,7 +6,7 @@ This is a demo code for training IPPO on Multiple-Particle-Environments (MPE).
 
 ## Installation
 
-```python
+```bash
 conda create -n marldemo python=3.7
 conda activate marldemo
 # install pytorch>=1.8.0 (CUDA>=11.0) manually
