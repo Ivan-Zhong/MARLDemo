@@ -230,7 +230,7 @@ class Runner:
             eval_actions_collector = []
             for agent_id in range(self.num_agents):
                 eval_actions= \
-                    self.actor[agent_id].act(eval_obs[:, agent_id])
+                    self.actor[agent_id].act(eval_obs[:, agent_id], deterministic=True)
                 eval_actions_collector.append(_t2n(eval_actions))
             eval_actions = np.array(eval_actions_collector).transpose(1, 0, 2)
             # Obser reward and next obs
